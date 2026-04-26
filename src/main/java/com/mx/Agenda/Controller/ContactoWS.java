@@ -101,8 +101,8 @@ public class ContactoWS {
 	                : ResponseEntity.ok(encontrado);
 	    }
 		
-		//BUSCAR POR NOMBRE--------------------------------->http://localhost:8010/api/contacto/buscar/{name}/{apellido}
-		@GetMapping("buscar/{name}/{apellido}")
+		//BUSCAR POR NOMBRE--------------------------------->http://localhost:8010/api/contacto/buscarNombre/{name}/{apellido}
+		@GetMapping("buscarNombre/{name}/{apellido}")
 		public ResponseEntity<?> buscar(@PathVariable String name,
 		                                @PathVariable String apellido) {
 
